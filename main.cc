@@ -15,8 +15,6 @@ class Test {
   ~Test() { printf("destruct a: %d, b: %d, c:%d\n", a, b, c); }
 };
 
-#pragma pack(pop)
-
 memory_pool::MemoryPool<Test> mp;
 std::vector<Test*> v1;
 std::vector<Test*> v2;
